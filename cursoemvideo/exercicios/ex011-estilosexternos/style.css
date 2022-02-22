@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    background-color:darkcyan
+
+    
+}
+h1 {
+    text-align: justify;
+    color:darkred
+}
+
+p{
+    text-align: justify;
+    color: rgb(139, 194, 44);
+    padding: -10px;
+}

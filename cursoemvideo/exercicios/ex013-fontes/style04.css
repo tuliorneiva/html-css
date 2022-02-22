@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Richard';
+    src: url('fonts/Richard\ Hamilton.ttf') format(truetype);
+}
+    
+      /* 
+      Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        -embedded-opentype
+        - truetype-att (Apple Advanced Typography)
+        -svg
+      */    
+
+body {
+    font-family: Richard, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Richard, Impact, sans-serif;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+/* NOTE QUE É PRECISO COLOCAR ' ' nos valores do @font-face, se não colocar exatamente como está acima NÃO FUNCIONA*/

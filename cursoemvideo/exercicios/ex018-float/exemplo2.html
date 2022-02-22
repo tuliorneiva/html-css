@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Float 2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 33.33%;
+            padding: 50px;
+            float: left;
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+            <div class="box" style="background-color: grey;">
+                <p>Some text inside</p>
+            </div>
+            <div class="box" style="background-color: grey;">
+                <p>Some text inside</p>
+            </div>
+            <div class="box" style="background-color: grey;">
+                <p>Some text inside</p>
+            </div>
+    </div>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi reprehenderit aliquam iusto odio beatae amet accusantium praesentium, maiores illum iste. Deserunt ipsa similique, soluta minima eligendi sit odio, sequi, modi neque eum sed labore omnis id incidunt reiciendis. Culpa laudantium quas eos tempore magni, sapiente aliquid, eaque eius voluptatum facilis consectetur repudiandae! Quae tempore placeat voluptas illo necessitatibus doloribus cupiditate cum consectetur autem quisquam fugit unde quia, tenetur ducimus fugiat, sequi consequuntur itaque omnis nisi esse assumenda. Perspiciatis incidunt ipsa repellat pariatur, unde laudantium illo cupiditate ut cumque, iste alias ad, soluta rem doloremque maxime quo sed dignissimos optio veritatis quisquam suscipit! Consequatur, quibusdam consectetur aut maiores, amet maxime eius minima in numquam, quas illo tempora dolore eveniet et quod dicta reiciendis at. Perferendis, sapiente animi. Saepe, natus atque. Velit amet quo doloremque facilis odio nihil quae consequatur atque exercitationem consequuntur dolor voluptates sed, minima molestiae. Quam fugit ad sit.</p>
+</body>
+</html>
+
+<!-- 
+    ANOTAÇÕES:
+Aqui temos outro exemplo de float. Podemos perceber que colocamos um float left, para todas as div's ficarem deslocadas para a esquerda do browser, e um width de 33.33% (JÁ QUE SÃO TRÊs DIVS -> SE FOSSEM 2 SERIA 50%...) e por ter um padding (nesse caso de 50px), precisamos colocar como característica geral do documento (*) um box-sizing como border-box (para inculir o padding e enventuais bordas)
+
+CLEARFIX HACK
+Quando colocamos um div com floats, o conteúdo a seguir pode ficar colado nas divs, então devemos usar um clearfix para descolar o conteúdo.
+-->

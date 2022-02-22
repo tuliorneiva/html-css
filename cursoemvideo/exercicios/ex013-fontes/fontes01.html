@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com fontes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* Nesse exemplo o navegador vai dar prioridade a fonte Arial, se não for compatível, tenta com Helvetica, e se não for compatível coloca uma fonte sem serifa qualquer -> sans-serif (sem serrifa); serif (serifada) ou monospace (monoespaçada) ele vai colocar uma fonte GENÉRICA dessas características -> devemos sempre terminar a especificação da nossa font-family com uma genérica. */
+
+            text-decoration: underline;
+            font: italic bolder 1em arial, Helvetica, sans-serif;
+        
+        }
+    
+            /* Podemos adicionar todas essas características com uma shorthand -> nesse caso shorthand font, seguindo a ordem abaixo:
+
+        font style -> font-weight -> font size -> font family
+        
+            font-size: 1em;
+            font-weight:bold;
+            font-style: italic;
+            text-decoration: underline;*/
+
+            /* Valores: lighter; normal; bold; bolder
+            Ou valores entre 100 - 900 (se a fonte comportar todos esses valores) */
+
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: normal;
+            font-weight: bolder;
+            font-size: 1.7em;
+    
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quos consectetur, ea facilis vero quis laboriosam quas, repellat earum deleniti, facere porro omnis iste hic aliquid. Debitis labore suscipit at. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aspernatur ipsa debitis corrupti hic veritatis distinctio maiores animi alias quo, sunt magnam, laborum sit optio in doloremque aliquid! Necessitatibus, eos! </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis corrupti reprehenderit provident, modi vitae aliquid rem facilis soluta rerum quod optio molestiae? Error porro debitis ut? Consequuntur ipsum tenetur reiciendis!</p>
+    <h2>Subtítulo do exercíco</h2>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ex, voluptate, ipsum, tenetur esse ducimus blanditiis architecto repellat accusantium deserunt libero incidunt eaque atque iusto voluptatibus impedit dolor? Nostrum, impedit.
+    
+</body>
+</html>
+
+
+<!-- Existem várias medidas de representar um tamanho
+Contudo é melhor usarmos ou "em" ou "px"
+     geralmente 16px = 1em
+font: italic bolder 1em arial, Helvetica, sans-serif -->

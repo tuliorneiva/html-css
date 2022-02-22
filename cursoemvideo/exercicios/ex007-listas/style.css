@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+ul li {
+    color: green;
+}
+
+ul > li {
+    color: blue;
+}

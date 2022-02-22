@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+:root {
+    --cor01: hsl(31, 77%, 52%);
+    --cor02: hsl(184, 100%, 22%);
+    --cor03: hsl(179, 100%, 13%);
+    --cor04: hsla(0, 0%, 100%, 0.75);
+    --cor05: hsl(0, 0%, 95%);
+
+    --fonte1: 'Big Shoulders Display', cursive;
+    --fonte2: 'Lexend Deca', sans-serif;
+}
+
+* {
+    font-size: 15px;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+.main-container {
+    display: flex;
+    margin: 0 auto;
+    width: 875px;
+    height: 500px;
+    margin-top: 5em;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 2em 3em;
+}
+
+.box1 {
+    background-color: var(--cor01);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.box2 {
+    background-color: var(--cor02);
+}
+
+.box3 {
+    background-color: var(--cor03);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.titlebox {
+    font-family: var(--fonte1);
+    color: white;
+    font-size: 2.5em;
+}
+
+.textbox {
+    font-family: var(--fonte2);
+    color: white;
+    line-height: 1.5;
+}
+
+button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-family: var(--fonte2);
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+.button1:hover {
+    color: white;
+    background-color: var(--cor01);
+    transition: all 0.4s;
+    border: 1px solid white;
+}
+
+.button2:hover {
+    color: white;
+    background-color: var(--cor02);
+    transition: all 0.4s;
+    border: 1px solid white;
+
+}
+
+.button3:hover {
+    color: rgb(90, 79, 79);
+    background-color: var(--cor03);
+    transition: all 0.4s;
+    border: 1px solid white;
+}
+
+@media only screen and (max-width: 370px) {
+
+    .box1 {
+        background-color: var(--cor03);
+    
+    }
+    
+
+} 

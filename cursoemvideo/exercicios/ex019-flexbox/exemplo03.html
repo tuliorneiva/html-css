@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox ITENS</title>
+    <style>
+
+        .flex-container {
+            display: flex;
+            margin: 10px;
+            height: 300px;
+            background-color: lightseagreen;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-container > div {
+            background-color: lightyellow;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+        }
+
+        /* PROPRIEDADES DOS ITENS 
+       Geralmente vamos usar essas proriedades em estilo inline, já que geralmente elas podem variar de um item para outro, contúdo, nada impede de usarmos com um estilo forma interna ou externa.     
+        
+       order: vai dizer qual a ordem dos flex-itens vai aparecer
+
+       flex-grow: vai ditar como cada item vai ocupar o espaço EXTRA na flexbox, e quando vai ser a proporção desse crescimento com os outros itens
+
+       flex-shrink: vai ditar como cada item vai diminuir em relação aos outros itens
+
+       flex-basis: vai dizer qual o tamanho inicial que cada item vai ter
+
+       align-self: vai dizer o alinhamento que cada item vai ter (ela sobrepõe o align-items)
+        */
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox na prática</h1>
+
+    <div class="flex-container">
+        <div style="order: 4; flex-shrink: 3;">A</div>
+        <div style="order: 2; flex-shrink: 1; align-self: flex-end;">B</div>
+        <div style="order: 5; flex-shrink: 1; flex-basis: 200px;">C</div>
+        <div style="order: 1; flex-shrink: 1; flex-grow: 3;">D</div>
+        <div style="order: 3; flex-shrink: 1; align-self: flex-start;">E</div>
+
+    <!-- temos a shorthand para os flex-itens que é "flex" que define o flex-grow, flex-shrink e o flex-basis, respectivamente
+        ex:         <div style="flex-grow: 1; flex-shrink: 1; flex-basis: 200px;">B</div>
+                                                ou escrevemos
+         ex:         <div style="flex: 1 1 200px;">B</div>
+    -->
+      </div>
+</body>
+</html>

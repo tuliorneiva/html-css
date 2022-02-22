@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient( to right, #49f8e1, #036b5da6 50%);
+
+}
+
+header {
+    background-color: rgb(18, 109, 139);
+    padding: 5px;
+    margin: 10px;
+    color: white;
+
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.linknav {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+    display: inline;
+    margin: auto;
+
+    /*     text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 30px; */ 
+    
+}
+
+.asideart {
+    text-align: right;
+    font-style: italic;
+}
+
+#mensagem {
+    font-size: 20px;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    width: 600px;
+    padding: 10px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px rgba(136, 109, 93, 0.603);
+
+}
+
+
+#artigos {
+    padding: 15px;
+}
+
+.tituloart {
+    background-color: rgb(62, 182, 212);
+    text-decoration: underline;
+}
+
+#endereco {
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#footerfinal {
+    text-align: end;
+    font-size: 9px;
+}
+
+nav {
+    padding: 10px;
+    margin-left: 415px;
+    
+}
+
+nav > a:hover {
+    background-color: lightblue;
+    text-decoration: none;
+}
+
+nav > a:active {
+    background: darkblue;
+    text-decoration: none;
+}

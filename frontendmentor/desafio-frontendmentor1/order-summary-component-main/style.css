@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700;900&display=swap');
+
+
+:root {
+    --cor01: hsl(225, 100%, 87%);
+    --cor02: hsl(245, 75%, 52%);
+    --cor03: hsl(225, 100%, 98%);
+    --cor04: hsl(224, 23%, 55%);
+    --cor05: hsl(223, 47%, 23%);
+
+    --fontepadrão:'Red Hat Display', sans-serif;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    max-width: 1400px;
+    min-width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontepadrão);
+    font-size: 16px;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: var(--cor01);
+    background-repeat: no-repeat;
+}
+
+.main_container {
+    background-color: white;
+    width: 380px;
+    text-align: center;
+    padding-bottom: 3em;
+    border-radius: 20px;   
+}
+
+img {
+    max-width: 100%;
+}
+
+.imginicial {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+.title {
+    font-size: 22px;
+    margin: 20px 0px 15px;
+}
+
+.title_description {
+    margin: auto;
+    width: 90%;
+    font-size: 1em;
+    color: hsla(223, 47%, 23%, 0.596);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.subscription_container {
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    padding: 1em;
+    width: 110%;
+}
+
+.subscription_text {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.subscription_logo {
+    margin-left: -20px;
+}
+
+.subscription_change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+
+
+
+.subscription_change:hover {
+    text-decoration: underline;
+}
+
+.button {
+    background-color: var(--cor02);
+    padding: 1.3em 0rem;
+    width: 100%;
+    height: 120%;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 5px 30px var(--cor04);
+    transition: all 300ms;
+}
+
+.cancel_button {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.514);
+    font-weight: 900;
+    font-size: 0.9em;
+}
+
+.cancel_button:hover {
+   color: var(--cor05);
+}

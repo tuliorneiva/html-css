@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox CONTAINER</title>
+    <style>
+
+        .flex-container {
+            display: flex;
+            margin: 10px;
+            height: 300px;
+            background-color: lightseagreen;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-container > div {
+            background-color: lightyellow;
+            width: 80px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+        }
+
+        /* PROPRIEDADES DO CONTAINER 
+            Aqui eu coloquei o display do container como flex (normal), só que é importante salientar que a primeira tag no css (.flex-containar) vai modificar só o container (só a parte azul, nesse exemplo) e a segunda tag vai modificar só os itens do container (a parte branca) -> isso ajuda muita a entender o racional do código
+
+            line-height vai mudar a altura da parte branca (não sei pq não pode ser height direto -> imagino que como estamos tratando de um texto, no caso uma div, vai ter que ser line-height), e o text-align vai mudar so alinhamento das letras dentro dos itens.
+            
+            o justify-content vai alinhar a flexbox apenas no sentido da main-axis (nesse caso na horizontal)
+            o align-items vai alinhar a flexbox apenas no sentido do eixo transversal (nesse caso na vertical)
+            já a propriedade align-content vai mudar os espaços entre as linhas do container (como pode ser visto no index.html)
+        
+        */
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox na prática</h1>
+
+    <div class="flex-container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+      </div>
+</body>
+</html>

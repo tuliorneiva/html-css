@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'android';
+    src: url('fonts/idroid.otf') format('opentype');
+}
+
+body {
+    background-color: #a0f5ba;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+    
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    width: 850px;
+    box-shadow: 5px 5px 10px rgba(136, 109, 93, 0.603);
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #16b846, #0c491e);
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;    
+}
+
+nav {
+    text-align: center;
+}
+
+p {
+    line-height: 2;
+    text-indent: 25px;
+}
+
+#mainh1 {
+    font-family: android;
+    color: #227e22d7;
+}
+
+main > h1, h2 {
+    font-family: android;
+    color: #227e22d7;
+    background-color: #a0f5ba;
+    font-size: 1em;
+    padding: 1px;
+}
+
+#tituloprincipal {
+    font-size: 36px;
+    text-align: center;
+    font-family: android;
+    margin-top: 0px;
+    padding: 15px;
+}
+
+#subtituloprincipal {
+    font-size: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: -28px 0px 33px 0px;
+}
+
+nav > a {
+    color: whitesmoke;
+    padding: 20px 20px 0% 20px;
+    text-decoration: none; 
+}
+
+.linknav:hover {
+    background-color: #13692d;
+}
+
+.imagenscentralizadas {
+    text-align: center;
+}
+
+
+#secvideo {
+    background-color: rgba(7, 107, 12, 0.842);
+    height: 400px;
+    padding: 10px;
+    margin-right: -20px;
+    margin-left: -20px;   
+}
+
+
+iframe {
+    display: block;
+    margin: auto;
+    margin-top: -8px;
+    width: 94%;
+    height: 94%;
+
+}
+
+/* Sempre que não der para colocar margin: auto em uma tag, tente colocar o display como BLOCK, já que não da para centralizar elementos que sejam inline level.
+*/
+
+#listas {
+    background-color: #6faa81;
+    border-radius: 10px;
+    margin: 0px;
+    padding: ;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    background: rgba(7, 107, 12, 0.842);
+    margin-top: -18px;
+    margin-bottom: -23px;
+    padding-bottom: 10px;
+}
+
+footer > p {
+    margin: 0px;
+}
+
+
+footer > h3 {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: auto;
+    color: white;
+    font-style: italic;
+    font-size: 12px;
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+:root {
+    --cor01: hsl(31, 77%, 52%);
+    --cor02: hsl(184, 100%, 22%);
+    --cor03: hsl(179, 100%, 13%);
+    --cor04: hsla(0, 0%, 100%, 0.75);
+    --cor05: hsl(0, 0%, 95%);
+
+    --fonte1: 'Big Shoulders Display', cursive;
+    --fonte2: 'Lexend Deca', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+main {
+    width: 320px;
+    margin: 5em auto;
+}
+
+.cards {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+
+.card1 {
+    background-color: var(--cor01);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card2 {
+    background-color: var(--cor02);
+}
+
+.card3 {
+    background-color: var(--cor03);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.titlebox {
+    font-family: var(--fonte1);
+    color: white;
+    font-size: 2.5em;
+}
+
+.textbox {
+    color: white;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: var(--fonte2);
+    margin-top: -1em;
+}
+
+.button {
+    padding: 0.8em 1.8em;    
+    border: none;
+    font-size: 15px;
+    border-radius: 50px;
+    margin-top: 7em;
+    cursor: pointer;
+    font-family: var(--fonte2);
+}
+
+.button1:hover {
+    color: white;
+    background-color: var(--cor01);
+    transition: all 0.2s;
+    border: 1px solid white;
+}
+
+.button2:hover {
+    color: white;
+    background-color: var(--cor02);
+    transition: all 0.2s;
+    border: 1px solid white;
+
+}
+
+.button3:hover {
+    color: white;
+    background-color: var(--cor03);
+    transition: all 0.2s;
+    border: 1px solid white;
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* MAIN CONTENT */
+    main {
+        width: 100%;
+        display: flex;
+        min-height: 100vh;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        width: 875px;
+    }
+
+    .card1 {
+        border-top-right-radius: 0px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .card3 {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    .button {
+        margin-top: 40px;
+    }
+}
+
+
+/*
+Revisar o código ( )
+Refazer o código mas começando do desktop e depois ir pra mobile ( )
+Estudar mais sobre flexbox -> descobrir aonde tenho que colocar o display: flex; -> por exemplo nesse exemplo. ( )
+
+*/

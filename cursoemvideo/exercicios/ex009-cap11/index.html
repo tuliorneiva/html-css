@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente mudar o tamanho da tela e veja o que acontece com a imagem
+    </p>
+
+    <picture> <!-- No source media-type com min-widht, damos preferência para a menor imagem (principalmente para dispositivos móveis), só que se a tela for maior do que 750px (nesse exemplo), a preferência fica com a foto-m, e se a tela for ainda maior (nesse caso 1050px), dá se preferência para a imagem grande. OBS: MUITO IMPORTANTE MANTER ESSA ORDEM DE MENOR -> MEDIANA -> MAIOR. -->
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="Foto dinâmica">
+    </picture>
+
+</body>
+
+<h2>Agora vamos trabalhar com max width</h2>
+<p>Tente mudar o tamanho da tela e veja o que acontece com a imagem</p>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="Foto dinâmica">  
+</picture>
+
+<h2>Agora vamos colocar um áudio no site</h2>
+<p>Aperte no botão start abaixo para começar a ouvir a música</p>
+<audio controls preload="metadata">
+    <source src="midias/Modern Time - An Jone.mp3" type="audio/mpeg">
+    <source src="midias/Modern Time - An Jone.ogg" type="audio/ogg">
+    <source src="midias/Modern Time - An Jone.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não suporta o arquivo de áudio, por favor baixe ele clicando <a href="midias/Modern Time - An Jone.mp3" download="Modern Time - An Jone.mp3" type="audio/mpeg">AQUI</a></p>
+</audio>
+
+<p>Quer baixar essa musica bacanuda? <a href="midias/Modern Time - An Jone.mp3" download="Modern Time - An Jone.mp3" type="audio/mpeg">CLIQUE AQUI</a></p>
+
+<h2>Agora vamos inserir videos com hospedagem interna</h2>
+<video width="560" controls autoplay poster="imagens/messi-careca.jpg">
+    <source src="midias/meu-video.mp4" type="video/mp4">
+    <p>Ops! Parece que seu navegador não suporta o vídeo.</p>
+</video>
+<p>Quer baixar esse vídeo maneiríssimo? <a href="midias/meu-video.mp4" download="meu-video.mp4" type="video/mp4">CLIQUE AQUI</a></p>
+
+<h2>Incorporando vídeos por hospedagem externa</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n4ee1nGom0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</html> 
+
+<!-- Nesse caso do max-width é o contrário, damos preferência para a maior foto (para desktops, por exemplo), e se a tela for MENOR que 1050px a preferência fica com a foto-m. Mas se for menor de 750px damos preferência para a foto menor.-->
+
+<!-- É importante ver que no min-width a relação é se a tela do dispostivo for MAIOR ao valor definido em pixels. E no max-width a relação de preferência é se a tela do dispositivo for MENOR ao valor definido em pixels. SE ENTENDER ESSA RELAÇÃO FACILITA ENTENDER ESSA TAG-->
+
+<!-- E como é possível ver no arquivo index.html, o resultado é o mesmo, independente de qual abordagem for escolhida, então é melhor ficar com um modelo e seguir sempre ele. Mas é claro que também é importante conhecer as duas abordagens.-->

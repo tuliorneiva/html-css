@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700;900&display=swap');
+
+
+:root {
+    --cor01: hsl(225, 100%, 87%);
+    --cor02: hsl(245, 75%, 52%);
+    --cor03: hsl(225, 100%, 98%);
+    --cor04: hsl(224, 23%, 55%);
+    --cor05: hsl(223, 47%, 23%);
+
+    --fontepadrão:'Red Hat Display', sans-serif;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+    min-width: 480px;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--cor01);
+    font-family: var(--fontepadrão);
+    font-size: 16px;
+}
+
+.main_container {
+    background-color: white;
+    text-align: center;
+    width: 380px;
+    padding-bottom: 5em;
+    border-radius: 20px;
+    height: 95%
+}
+
+
+img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.imginicial {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.781);
+    font-weight: 900;
+}
+
+.title_description {
+    width: 90%;
+    margin: auto;
+    color: rgba(0, 0, 0, 0.664);
+    font-weight: 700;
+}
+
+.subscription_container {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 1em 0em;
+    justify-content: space-around;
+}
+
+.subscription_text {
+    margin-left: -70px;
+}
+
+.annual_plan {
+    font-weight: 900; 
+}
+
+.price {
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: 600;
+}
+
+.subscription_change:hover {
+    text-decoration: underline;
+}
+
+.button {
+    background: var(--cor02);
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 1.3em 0rem;
+    box-shadow: 0px 5px 30px hsl(224, 23%, 55%);
+    transition: all 300ms;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    width: 70%;
+
+}
+
+.cancel_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.cancel_button:hover {
+    text-decoration: underline;
+}

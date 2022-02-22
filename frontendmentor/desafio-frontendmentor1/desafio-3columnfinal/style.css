@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+:root {
+    --color01: hsl(31, 77%, 52%);
+    --color02: hsl(184, 100%, 22%);
+    --color03: hsl(179, 100%, 13%);
+    --color04: hsla(0, 0%, 100%, 0.75);
+    --color05: hsl(0, 0%, 95%);
+
+    --font1: 'Big Shoulders Display', cursive;
+    --font2: 'Lexend Deca', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-size: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    min-height: 500px;
+    max-width: 900px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 2em 3em;
+    color: white;
+}
+
+
+.card1 {
+    background-color: var(--color01);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card2{
+    background-color: var(--color02);
+}
+
+.card3 {
+    background-color: var(--color03);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.titlebox {
+    font-size: 3em;
+    font-family: var(--font1);
+}
+
+.textbox {
+    color: rgba(255, 255, 255, 0.801);
+    font-family: var(--font2);
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 2em;
+    padding: 1em 1.8em;
+    border: none;
+    border-radius: 50px;
+    font-family: var(--font2);
+    cursor: pointer;
+}
+
+.button1 {
+    color: var(--color01);
+}
+
+.button2 {
+    color: var(--color02);
+}
+
+.button3 {
+    color: var(--color03);
+}
+
+.button1:hover {
+    color: white;
+    background-color: var(--color01);
+    border: 1px solid white;
+}
+
+.button2:hover {
+    color: white;
+    background-color: var(--color02);
+    border: 1px solid white;
+}
+
+.button3:hover {
+    color: white;
+    background-color: var(--color03);
+    border: 1px solid white;
+}
+
+@media only screen and (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    max-width: 500px;
+    margin: 60px 30px;
+  }
+
+  .card {
+    flex-direction: column;
+    min-height: 500px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .card1 {
+      border-bottom-left-radius: 0px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+  }
+
+  .card3 {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+  }
+
+}
+
+
+footer {
+    margin-top: 30px;
+}
+

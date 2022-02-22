@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --cor01: hsl(233, 47%, 7%);
+    --cor02: hsl(244, 38%, 16%);
+    --cor03: hsl(277, 64%, 61%);
+    --cor04: hsl(0, 0%, 100%);
+    --cor04: hsla(0, 0%, 100%, 0.75);
+    --cor04: hsla(0, 0%, 100%, 0.6);
+
+    --fonte1: 'Inter', sans-serif;
+    --fonte2: 'Lexend Deca', sans-serif;
+
+
+}
+
+* {
+    margin: 0% auto;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    color: white;
+}
+
+body {
+    max-width: 1400px;
+    min-width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor01);
+
+}
+
+img {
+    height: 100%;
+    width: 50%;
+    display: block;
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main_container {
+    background-color: var(--cor02);
+    max-width: 1400px;
+    min-width: 500px;
+    height: 70%;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 30px;
+    margin: 3em 3em 3em 2em;
+}
+
+.title {
+    font-size: 32px;
+    font-family: var(--fonte1);
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 2em;
+    font-family: var(--fonte2);
+    font-size: 16px;
+    line-height: 2em;
+    color: var(--cor04);
+}
+
+
+.details-container {
+    display: flex;
+    position: relative;
+    top: 65px;
+    right: 35px;
+}
+
+.det-num {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: var(--fonte1);
+}
+
+.det-text {
+    font-family: var(--fonte2);
+    color: var(--cor04);
+    font-size: 12px;
+}

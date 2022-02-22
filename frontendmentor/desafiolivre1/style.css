@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url(//db.onlinewebfonts.com/c/4042124ab3b3022e43b9f91d92f2efd7?family=Geomanist+Light);
+
+@font-face {
+    font-family: 'Bebas Neue', cursive;
+    font-family: "Geomanist Light"; src: url("//db.onlinewebfonts.com/t/4042124ab3b3022e43b9f91d92f2efd7.eot"); src: url("//db.onlinewebfonts.com/t/4042124ab3b3022e43b9f91d92f2efd7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4042124ab3b3022e43b9f91d92f2efd7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4042124ab3b3022e43b9f91d92f2efd7.woff") format("woff"), url("//db.onlinewebfonts.com/t/4042124ab3b3022e43b9f91d92f2efd7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4042124ab3b3022e43b9f91d92f2efd7.svg#Geomanist Light") format("svg");
+}
+
+:root {
+    --cor01: #EA6032;
+    --cor02: #363732;
+    --cor03: #53554a;
+
+    --fontepadrão: 'Geomanist Light', sans-serif;
+    --fontedestaque: 'Bebas Neue', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor01);
+}
+
+main {
+    background-color: white;
+    max-width: 1000px;
+    min-width: 350px;
+    margin: auto;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-family: var(--fontepadrão);
+}
+
+header {
+    background-image: linear-gradient(to bottom, #53554a, #363732);
+    color: white;
+    min-height: 130px;
+    text-align: center;
+    padding-top: 50px;
+    line-height: 50px;
+}
+
+nav {
+    text-align: center;    background-color: var(--cor02);
+    padding-bottom: 5px;
+    padding-right: 30px;
+}
+
+#entrar {
+    background-color: #4183EE;
+    padding: 6px 10px 5px 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    font-family: var(--fontepadrão);
+    color: white;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+
+}
+
+#tituloheader {
+    font-family: var(--fontedestaque);
+    font-size: 3em;
+}
+
+#subheader {
+    font-family: var(--fontepadrão);
+    font-size: 1em;
+}
+
+.imagens {
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding: 30px 0px 40px 0px;
+}
+
+#tituloart {
+    font-size: 2.5em;
+}
+
+#tagsart {
+    font-size: .7em;
+    color: grey;
+}
+
+#tagsart > a{
+    color: grey;
+    text-decoration: none;
+}
+
+h2 {
+    padding-top: 0px;
+    font-size: 2em;
+}
+
+#h2final {
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+#hlista {
+    padding: 20px 0px 20px 0px;
+    font-size: 1.5em;
+}
+
+h3 {
+    margin: 20px 0px 20px 0px;
+}
+
+#h3especial {
+    margin: 20px 0px 0px 0px;
+}
+
+
+ul {
+    padding: 30px;
+}
+
+/* Falta: ajeitar os p's; ajeitar o futuro footer; ajeitar -> o menu não da pra ficar 100% reponsivo sem media querie*/

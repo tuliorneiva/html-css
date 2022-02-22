@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        .div1 {
+            display: inline-block;
+            background-color: rgba(0, 128, 0, 0.651);
+            width: 200px;
+            height: 200px;
+            text-align: center;
+        }
+
+        .div1:hover {
+            background-color: rgba(255, 0, 0, 0.658);
+        }
+
+        .div2:hover {
+            color: rgba(255, 0, 0, 0.658);
+        }
+
+        .div3:hover {
+            color: rgba(255, 0, 0, 0.658);
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: rgba(255, 0, 0, 0.658);
+            color:  black;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Pseudo-classes</h1>
+    <div class="div1">1</div>
+    <div class="div1">2</div>
+    <div class="div1">3</div>
+
+    <br>
+    
+    <h2>Texto escondido</h2>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div class="div2">Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <br> 
+    <div class="div3">
+        Fim do exemplo.
+        <p style="background-color: blue;">Ou será que não?</p>
+    </div>
+</body>
+</html>
+
+
+<!-- a tag "div > p" está se referindo aos "p" que são filhos  de um div.
+    A tag display vai justamente determinar como vai ser o aparecimento do texto/elemento no documento. -->

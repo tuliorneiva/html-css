@@ -1,0 +1,23 @@
+
+.main-container {
+    display: flex;
+}
+
+.flex-item {
+    background-color: grey;
+    width: 200px;
+    margin: 20px;
+    border: 5px solid black;
+}
+
+.flex-item1 {
+    min-height: 100px;
+}
+
+.flex-item2 {
+    min-height: 200px;
+}
+
+.flex-item3 {
+    min-height: 300px;
+}
